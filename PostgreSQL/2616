@@ -1,0 +1,5 @@
+select
+    c.id,
+    c.name
+from customers as c
+WHERE NOT EXISTS (SELECT l.id_customers FROM locations as l WHERE c.id = l.id_customers);

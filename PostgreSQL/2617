@@ -1,0 +1,5 @@
+select 
+    pr.name,
+    pv.name
+from providers as pv, products as pr
+where pr.id_providers = pv.id and pv.name = 'Ajax SA';

@@ -1,0 +1,4 @@
+select 
+    c.city 
+from customers as c
+order by c.city asc;
